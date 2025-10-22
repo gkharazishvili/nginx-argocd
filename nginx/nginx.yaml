@@ -345,7 +345,7 @@ items:
       app.kubernetes.io/instance: nginx
       app.kubernetes.io/name: nginx
     sessionAffinity: None
-    type: LoadBalancer
+    type: NodePort
   status:
     loadBalancer: {}
 - apiVersion: apps/v1
