@@ -303,49 +303,7 @@ items:
     - ip: 192.168.204.40
     qosClass: Burstable
     startTime: "2025-10-22T07:46:37Z"
-- apiVersion: v1
-  kind: Service
-  metadata:
-    annotations:
-      meta.helm.sh/release-name: nginx
-      meta.helm.sh/release-namespace: nginx-helm
-    creationTimestamp: "2025-10-22T07:46:37Z"
-    labels:
-      app.kubernetes.io/instance: nginx
-      app.kubernetes.io/managed-by: Helm
-      app.kubernetes.io/name: nginx
-      app.kubernetes.io/version: 1.29.2
-      helm.sh/chart: nginx-22.1.1
-    name: nginx
-    namespace: nginx-helm
-    resourceVersion: "5184743"
-    uid: a1d7a338-4c58-43c8-87e6-61cb6e09dafb
-  spec:
-    allocateLoadBalancerNodePorts: true
-    clusterIP: 10.96.208.133
-    clusterIPs:
-    - 10.96.208.133
-    externalTrafficPolicy: Cluster
-    internalTrafficPolicy: Cluster
-    ipFamilies:
-    - IPv4
-    ipFamilyPolicy: SingleStack
-    ports:
-    - name: http
-      nodePort: 32698
-      port: 80
-      protocol: TCP
-      targetPort: http
-    - name: https
-      nodePort: 32759
-      port: 443
-      protocol: TCP
-      targetPort: https
-    selector:
-      app.kubernetes.io/instance: nginx
-      app.kubernetes.io/name: nginx
-    sessionAffinity: None
-    type: NodePort
+
 
 - apiVersion: apps/v1
   kind: Deployment
